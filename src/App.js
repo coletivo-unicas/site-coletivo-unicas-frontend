@@ -1,9 +1,13 @@
-import './App.css';
+import React from 'react';
+import Rotas from './routes';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     <h2>Hello Word</h2>
+    <div>
+      <BrowserRouter>
+        <Rotas />
+      </BrowserRouter>
     </div>
   );
 }
