@@ -10,13 +10,12 @@ const Header = () => {
         <>
             <Navbar>
                 <NavLink to="/"><img alt="logo" src={Logo} /></NavLink>
-                <div className='header--container'>
-                    <NavLink className="header--itens" to="/">Sobre</NavLink>
-                    <NavLink className="header--itens" to="/">Ações</NavLink>
-                    <NavLink className="header--itens" to="/">Lojinha</NavLink>
-                    <NavLink className="header--itens" to="/">Nosso time</NavLink>
-                    <NavLink className="header--itens" to="/">Parcerias</NavLink>
-                    <NavLink className="header--itens" to='/contact'>Contato</NavLink>
+                <div className='header-container'>
+                    <NavLink className="header-itens" to="/">Sobre</NavLink>
+                    <NavLink className="header-itens" to="/">Nosso time</NavLink>
+                    <NavLink className="header-itens" to="/">Projetos</NavLink>
+                    <NavLink className="header-itens" to="/">Parcerias</NavLink>
+                    <NavLink className="header-itens" to='/contact'>Contato</NavLink>
                 </div>
             </Navbar>
         </>

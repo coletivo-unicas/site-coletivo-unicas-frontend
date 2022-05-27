@@ -12,20 +12,20 @@ img {
     height: 70px;
 }
 
-.header--container {
+.header-container {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: flex-end;
 }
 
-.header--itens {
+.header-itens {
     text-decoration: none;
     color: #FFF;
     margin: 0 0 0 20px;
 }
 
-.header--itens:hover {
+.header-itens:hover {
     text-decoration: underline;
     color: #FFF;
 }
