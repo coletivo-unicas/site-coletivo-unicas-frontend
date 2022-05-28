@@ -1,21 +1,64 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
-import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Logo from '../../assets/images/logo.png';
 import './style.css';
+import { Link } from "react-scroll";
 
 const Header = () => {
     return (
         <>
             <Navbar>
-                <NavLink to="/"><img alt="logo" src={Logo} /></NavLink>
+                <Link
+                    to="banner"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={100}>
+                    <img alt='logo' src={Logo} />
+                </Link>
                 <div className='header-container'>
-                    <NavLink className="header-itens" to="/">Sobre</NavLink>
-                    <NavLink className="header-itens" to="/">Nosso time</NavLink>
-                    <NavLink className="header-itens" to="/">Projetos</NavLink>
-                    <NavLink className="header-itens" to="/">Parcerias</NavLink>
-                    <NavLink className="header-itens" to='/contact'>Contato</NavLink>
+                    <Link
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={100}
+                        to="about"
+                    >Sobre
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={100}
+                        to="/">Nosso time
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={100}
+                        to="/">Projetos
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={100}
+                        to="/">Parcerias
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={100}
+                        to='contact'>Contato
+                    </Link>
                 </div>
             </Navbar>
         </>

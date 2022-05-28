@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Banner from '../Banner';
-import Contact from '../Contact';
 import './style.css';
 import Header from '../../components/Header';
+import About from '../About';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <div className='home'>
             <Header />
             <Banner />
-            <Contact />
+            <About />
         </div>
     );
 }

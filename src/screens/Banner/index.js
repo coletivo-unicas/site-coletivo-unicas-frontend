@@ -5,7 +5,7 @@ import Button from '../../components/Button';
 
 const Banner = () => {
     return (
-        <div className='banner'>
+        <div className='banner' id='banner'>
             <div className='banner-info'>
                 <h2>Site Coletivo Unicas</h2>
                 <p>Quem sabe o que as mulheres podem ser quando

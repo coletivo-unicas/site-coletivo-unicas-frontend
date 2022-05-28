@@ -10,6 +10,12 @@ img {
     position: fixed !important;
     width: 100%;
     height: 70px;
+    z-index: 99;
+}
+
+.nav-item>.active {
+    border-bottom: 1px solid #333 !important;
+    color: #FFF;
 }
 
 .header-container {
@@ -19,13 +25,12 @@ img {
     justify-content: flex-end;
 }
 
-.header-itens {
-    text-decoration: none;
-    color: #FFF;
-    margin: 0 0 0 20px;
+a {
+    color: #FFF !important;
+    margin: 0 0 0 40px;
+    font-size: 18px;
 }
 
-.header-itens:hover {
-    text-decoration: underline;
-    color: #FFF;
+a:hover {
+    text-decoration: underline !important;
 }

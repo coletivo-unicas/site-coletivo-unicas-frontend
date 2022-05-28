@@ -4,5 +4,5 @@ button {
     background-color: #4db8a6;
     color: #FFF;
     border: none;
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
