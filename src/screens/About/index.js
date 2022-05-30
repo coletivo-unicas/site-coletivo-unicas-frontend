@@ -2,12 +2,13 @@ import React from 'react';
 import BannerImage from '../../assets/images/banner.jpg';
 import './style.css';
 import Button from '../../components/Button';
+import { Link } from "react-scroll";
 
 const About = () => {
     return (
         <div className='about' id='about' >
             <div>
-                <h2 className='about-title'>Sobre o Coletivo Unicas</h2>
+                <h2 className='title'>Sobre o Coletivo Unicas</h2>
                 <p className='about-description'>Criado em 2019 por alunas do curso de Ciência da Computação
                     da Universidade Católica de Pernambuco (UNICAP), o Coletivo
                     Unicas é uma rede de apoio entre mulheres cis e trans envolvidas
@@ -24,7 +25,7 @@ const About = () => {
                     de Ciência da Computação e Sistemas para Internet da UNICAP.
                 </p>
                 <div className='about-button'>
-                    <Button title='Contato' />
+                    <Link to='ourTeam'> <Button title='Conhecer o time' width='170px' /></Link>
                 </div>
             </div>
             <div>

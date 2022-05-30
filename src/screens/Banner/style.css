@@ -12,16 +12,21 @@
 
 .banner-info,
 p {
-    width: 50%;
+    width: 60%;
+}
+
+.banner-title {
+    margin: 0 0 20px 0;
 }
 
 .banner-image {
     width: 300px;
     border: double;
     border-radius: 50px 0px 50px 0px;
-    margin: 150px 0px 0px 100px;
+    margin: 150px 0px 0px 40px;
 }
 
 .banner-button-options {
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
+    display: inline-flex;
 }

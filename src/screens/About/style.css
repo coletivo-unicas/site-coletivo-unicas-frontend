@@ -2,13 +2,10 @@
     display: inline-flex;
 }
 
-.about-title {
-    margin: 60px 0 0 100px;
-}
-
 .about-description {
     width: 60%;
     margin: 30px 0 0 100px;
+    text-align: initial;
 }
 
 .about-image {
@@ -19,5 +16,5 @@
 }
 
 .about-button {
-    margin: 40px 0 100px 100px;
+    margin: 40px 0 100px 60px;
 }
