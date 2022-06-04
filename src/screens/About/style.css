@@ -3,8 +3,8 @@
 }
 
 .about-description {
-    width: 60%;
-    margin: 30px 0 0 100px;
+    width: 40%;
+    margin: 30px 200px 0 100px;
     text-align: initial;
 }
 
@@ -12,9 +12,19 @@
     width: 300px;
     border: double;
     border-radius: 20px;
-    margin: 150px 200px 0px 0px;
+    margin: 40px 0px 0px 0px;
 }
 
-.about-button {
-    margin: 40px 0 100px 60px;
+.about-options {
+    display: inline-flex;
+    margin: 60px 0px 40px 200px;
+}
+
+.about-options-image {
+    width: 160px;
+    margin: 0 0 30px 0;
+}
+
+#about-options-title {
+    font-weight: bold;
 }

@@ -1,14 +1,12 @@
 import React from 'react';
 import BannerImage from '../../assets/images/banner.jpg';
 import './style.css';
-import Button from '../../components/Button';
-import { Link } from "react-scroll";
 
 const About = () => {
     return (
-        <div className='about' id='about' >
-            <div>
-                <h2 className='title'>Sobre o Coletivo Unicas</h2>
+        <div id='about' >
+            <h2 className='title'>Sobre o Coletivo Unicas</h2>
+            <div className='about'>
                 <p className='about-description'>Criado em 2019 por alunas do curso de Ciência da Computação
                     da Universidade Católica de Pernambuco (UNICAP), o Coletivo
                     Unicas é uma rede de apoio entre mulheres cis e trans envolvidas
@@ -24,15 +22,36 @@ const About = () => {
                     Atualmente, as integrantes do Coletivo Unicas, são alunes dos cursos
                     de Ciência da Computação e Sistemas para Internet da UNICAP.
                 </p>
-                <div className='about-button'>
-                    <Link to='ourTeam'> <Button title='Conhecer o time' width='170px' /></Link>
+
+                <div>
+                    <img className='about-image' alt='banner' src={BannerImage} />
                 </div>
             </div>
-            <div>
 
-            </div>
-            <div>
-                <img className='about-image' alt='banner' src={BannerImage} />
+            <div className='about-options'>
+                <div>
+                    <img className='about-options-image' src={BannerImage} alt='banner' />
+                    <p id='about-options-title'>Missão</p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <div>
+                    <img className='about-options-image' src={BannerImage} alt='banner' />
+                    <p id='about-options-title'>Visão</p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <div>
+                    <img className='about-options-image' src={BannerImage} alt='banner' />
+                    <p id='about-options-title'>Valores</p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
             </div>
         </div>
     )
