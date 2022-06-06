@@ -41,7 +41,7 @@ const Header = () => {
                         smooth={true}
                         offset={-70}
                         duration={100}
-                        to="/">Projetos
+                        to="projects">Projetos
                     </Link>
                     <Link
                         activeClass="active"

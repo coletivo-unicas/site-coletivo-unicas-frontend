@@ -6,6 +6,7 @@ import About from '../About';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import OurTeam from '../OurTeam';
+import Projects from '../Projects';
 
 const Home = () => {
     useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
             <Banner />
             <About />
             <OurTeam />
+            <Projects />
         </div>
     );
 }
