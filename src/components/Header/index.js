@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo_unicas.svg';
 import './style.css';
 import { Link } from "react-scroll";
 
@@ -9,15 +9,17 @@ const Header = () => {
     return (
         <>
             <Navbar>
-                <Link
-                    to="banner"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={100}>
-                    <img alt='logo' src={Logo} />
-                </Link>
+                <img alt='logo' src={Logo} />
                 <div className='header-container'>
+                    <Link
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={100}
+                        to="banner"
+                    >Início
+                    </Link>
                     <Link
                         activeClass="active"
                         spy={true}
