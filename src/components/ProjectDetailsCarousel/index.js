@@ -2,9 +2,9 @@ import React from 'react';
 import './style.css';
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
-import BannerImage from '../../assets/images/banner.jpg';
+import BannerImage from '../../assets/images/mulheres-na-tecnologia.jpg';
 
-const CarouselProjects = ({ handlerButton }) => {
+const ProjectDetailsCarousel = ({ handlerButton }) => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -27,16 +27,16 @@ const CarouselProjects = ({ handlerButton }) => {
             <Carousel
                 responsive={responsive}
                 centerMode={true}
+                autoPlay={false}
             >
-                <div>
-                    <img src={BannerImage} alt='projects' />
-                    <label>
-                        Technovation Girls
-                    </label>
-                </div>
-            </Carousel>;
+                <img className='project-details-carousel-image' src={BannerImage} alt='projects' />
+                <img className='project-details-carousel-image' src={BannerImage} alt='projects' />
+                <img className='project-details-carousel-image' src={BannerImage} alt='projects' />
+                <img className='project-details-carousel-image' src={BannerImage} alt='projects' />
+                <img className='project-details-carousel-image' src={BannerImage} alt='projects' />
+            </Carousel>
         </div>
     )
 }
 
-export default CarouselProjects;
+export default ProjectDetailsCarousel;

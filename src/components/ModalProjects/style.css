@@ -1,9 +1,7 @@
 .modal {
-    background-color: rebeccapurple;
-    position: fixed;
-    width: 60%;
+    background-color: #00000059;
+}
+
+.modal-content {
     height: 500px;
-    top: 80px;
-    left: 22%;
-    color: black;
 }
