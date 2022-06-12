@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+}
+
+.footer-container {
+    padding: 40px 20px 10px;
+    margin-top: 40px;
+    background-color: #7F6CC1;
+    color: white;
+    text-align: center;
+}
+
+.footer-social-media {
+    display: inline-flexbox;
+    margin-bottom: 30px;
+}
