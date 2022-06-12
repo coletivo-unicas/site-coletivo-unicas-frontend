@@ -14,15 +14,13 @@ img {
 }
 
 .active {
-    background-image:
-        url("../../assets/images/active_menu_crown.svg"),
-        url("../../assets/images/active_menu.svg");
+    background-image: url("../../assets/images/active_menu.svg");
     background-repeat: no-repeat;
     color: #FFF !important;
     width: 120px;
     text-decoration: none !important;
     text-align: center;
-    background-position: right;
+    background-position: bottom;
 }
 
 .header-container {
@@ -40,10 +38,8 @@ a {
 }
 
 a:hover {
-    background-image:
-        url("../../assets/images/active_menu_crown.svg"),
-        url("../../assets/images/active_menu.svg");
+    background-image: url("../../assets/images/active_menu.svg");
     background-repeat: no-repeat;
     color: #FFF !important;
-    background-position: right;
+    background-position: bottom;
 }

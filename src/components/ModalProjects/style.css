@@ -5,3 +5,12 @@
 .modal-content {
     height: 500px;
 }
+
+.modal-projects-body {
+    padding: 20px;
+    padding: 10px 30px 30px 30px;
+}
+
+.modal-header {
+    border: none !important;
+}
