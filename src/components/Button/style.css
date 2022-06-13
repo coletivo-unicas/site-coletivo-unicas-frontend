@@ -6,4 +6,5 @@ button {
     border: none;
     border-radius: 24px !important;
     font-weight: bold;
+    cursor: pointer;
 }

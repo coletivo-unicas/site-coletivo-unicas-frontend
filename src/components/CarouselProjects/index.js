@@ -3,23 +3,21 @@ import './style.css';
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import BannerImage from '../../assets/images/banner.jpg';
+import BackgroundProjectBorder from '../../assets/images/bg_project_border.svg';
 
 const CarouselProjects = ({ handlerButton }) => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 3,
-            slidesToSlide: 3 // optional, default to 1.
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 2,
-            slidesToSlide: 2 // optional, default to 1.
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
             items: 2,
-            slidesToSlide: 1 // optional, default to 1.
         }
     };
     return (
@@ -28,9 +26,31 @@ const CarouselProjects = ({ handlerButton }) => {
                 responsive={responsive}
                 centerMode={true}
             >
-                <div>
-                    <img src={BannerImage} alt='projects' />
-                    <label>
+                <div className='carousel-projects-background' onClick={handlerButton}>
+                    <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
+                    <img className='carousel-projects-image' src={BannerImage} alt='projects' />
+                    <label className='carousel-projects-title'>
+                        Technovation Girls
+                    </label>
+                </div>
+                <div className='carousel-projects-background'>
+                    <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
+                    <img className='carousel-projects-image' src={BannerImage} alt='projects' />
+                    <label className='carousel-projects-title'>
+                        Technovation Girls
+                    </label>
+                </div>
+                <div className='carousel-projects-background'>
+                    <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
+                    <img className='carousel-projects-image' src={BannerImage} alt='projects' />
+                    <label className='carousel-projects-title'>
+                        Technovation Girls
+                    </label>
+                </div>
+                <div className='carousel-projects-background'>
+                    <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
+                    <img className='carousel-projects-image' src={BannerImage} alt='projects' />
+                    <label className='carousel-projects-title'>
                         Technovation Girls
                     </label>
                 </div>

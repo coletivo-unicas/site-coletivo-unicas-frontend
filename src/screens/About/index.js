@@ -4,7 +4,7 @@ import about_01 from '../../assets/images/about_01.svg';
 import about_02 from '../../assets/images/about_02.svg';
 import about_03 from '../../assets/images/about_03.svg';
 import './style.css';
-import BackgroundCloud from '../../assets/images/bg_cloud.svg';
+import BackgroundCloud from '../../assets/images/bg_home_slice.svg';
 
 const About = () => {
     return (
