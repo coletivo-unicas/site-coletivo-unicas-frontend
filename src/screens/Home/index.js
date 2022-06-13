@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import OurTeam from '../OurTeam';
 import Projects from '../Projects';
+import Footer from '../../components/Footer';
 
 const Home = () => {
     useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
             <About />
             <Projects />
             <OurTeam />
+            <Footer />
         </div>
     );
 }
