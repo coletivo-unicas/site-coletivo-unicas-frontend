@@ -11,8 +11,7 @@ const Projects = () => {
         <div id='projects'>
             <div>
                 <h2 className='projects-title'>CONHEÇA OS NOSSOS PROJETOS</h2>
-                <CarouselProjects onClick={() => setModalShow(true)} />
-                <button onClick={() => setModalShow(true)}>Click Here!</button>
+                <CarouselProjects handlerButton={() => setModalShow(true)} />
                 <div>
                     <ModalProjects show={modalShow}
                         onHide={() => setModalShow(false)} />
