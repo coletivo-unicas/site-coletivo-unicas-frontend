@@ -1,0 +1,21 @@
+.banner {
+    background-color: #A396D1;
+    margin: 70px 0 0 0;
+    width: 100%;
+}
+
+.banner-info {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-button-options {
+    margin: -60px 0 0px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-main {
+    width: 80%;
+    margin: 0;
+}

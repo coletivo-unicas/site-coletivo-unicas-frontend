@@ -6,7 +6,7 @@ const Rotas = () => {
     return (
         <div>
             <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route exact path="/" element={<Home />} />
             </Routes>
         </div>
     )
