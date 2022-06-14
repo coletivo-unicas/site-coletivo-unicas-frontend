@@ -28,3 +28,8 @@
     position: absolute;
     margin: 0;
 }
+
+.carousel-projects-right-arrow {
+    margin: 0 0 0 104px;
+    width: 50px;
+}

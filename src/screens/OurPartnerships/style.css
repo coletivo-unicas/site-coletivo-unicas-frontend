@@ -1,0 +1,36 @@
+.our-partnerships {
+    display: flow-root;
+    background-color: #DFD6CB;
+    height: 100%;
+}
+
+.our-partnerships-title {
+    color: #9E6612;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 60px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.our-partnerships-logos {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 0 60px 0;
+    width: 100%;
+}
+
+#our-partnerships-logos {
+    margin: 10px 40px 0 54px;
+    width: 150px;
+    object-fit: contain;
+}
+
+ul,
+li {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
