@@ -2,7 +2,6 @@
     background-color: #255932;
     width: 250px;
     height: 260px;
-    margin: 0 0 0 100px;
     border-radius: 26px;
     cursor: pointer;
 }
@@ -29,7 +28,6 @@
     margin: 0;
 }
 
-.carousel-projects-right-arrow {
-    margin: 0 0 0 104px;
-    width: 50px;
+.eLPooy {
+    width: 80% !important;
 }

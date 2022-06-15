@@ -18,7 +18,7 @@ const ModalProjects = (props) => {
                 <ProjectDetailsCarousel />
 
                 <div className="modal-projects-body">
-                    <h4>Centered Modal</h4>
+                    <h4 className="modal-projects-title">Centered Modal</h4>
                     <p>
                         Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
                         dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac

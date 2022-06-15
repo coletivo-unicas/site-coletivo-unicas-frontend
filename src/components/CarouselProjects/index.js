@@ -1,42 +1,20 @@
 import React from 'react';
 import './style.css';
-import Carousel from 'react-multi-carousel';
-import "react-multi-carousel/lib/styles.css";
 import BannerImage from '../../assets/images/banner.jpg';
 import BackgroundProjectBorder from '../../assets/images/bg_project_border.svg';
-import ArrowLeft from '../../assets/images/proj_arrow_left.svg';
-import ArrowRight from '../../assets/images/proj_arrow_right.svg';
-
-const CustomRightArrow = ({ onClick }) => {
-    return <img className='carousel-projects-right-arrow' src={ArrowRight} alt='ArrowRight' onClick={() => onClick()} />;
-};
-
-const CustomLeftArrow = ({ onClick }) => {
-    return <img src={ArrowLeft} alt='ArrowLeft' onClick={() => onClick()} />;
-};
+// import ArrowLeft from '../../assets/images/proj_arrow_left.svg';
+// import ArrowRight from '../../assets/images/proj_arrow_right.svg';
+import Carousel from 'react-elastic-carousel';
 
 const CarouselProjects = ({ handlerButton }) => {
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 2,
-        }
-    };
+
     return (
         <div>
             <Carousel
-                responsive={responsive}
-                renderButtonGroupOutside={true}
-                customLeftArrow={<CustomLeftArrow />}
-                customRightArrow={<CustomRightArrow />}
+                itemsToShow={3}
+                pagination={false}
+                // enableAutoPlay={true}
+                // autoPlaySpeed={5000}
             >
                 <div className='carousel-projects-background' onClick={handlerButton}>
                     <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />

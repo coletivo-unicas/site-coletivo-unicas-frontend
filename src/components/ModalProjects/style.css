@@ -13,4 +13,14 @@
 
 .modal-header {
     border: none !important;
+    background-color: #E3DFF1;
+}
+
+.modal-body {
+    background-color: #E3DFF1;
+    padding: 0px;
+}
+
+.modal-projects-title {
+    color: #255932;
 }
