@@ -17,10 +17,13 @@
 }
 
 .modal-body {
+    font-family: 'Open Sans', sans-serif;
     background-color: #E3DFF1;
     padding: 0px;
 }
 
 .modal-projects-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #255932;
+    font-size: 30px;
 }

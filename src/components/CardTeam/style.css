@@ -9,6 +9,7 @@
 }
 
 .card-team-infos {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin: 0 0 6px 0;
     display: grid;
@@ -18,8 +19,10 @@
 }
 
 #name {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
     color: #AC7C00;
+    font-size: 16px;
 }
 
 .card-team-networks {
@@ -34,6 +37,7 @@
 }
 
 .card-team-pronoun {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin: 0 0 6px 0;
     display: grid;

@@ -7,6 +7,7 @@
 }
 
 .our-partnerships-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #9E6612;
     font-weight: bold;
     font-size: 30px;
@@ -26,13 +27,4 @@
     margin: 10px 40px 0 54px;
     width: 150px;
     object-fit: contain;
-}
-
-ul,
-li {
-    display: inline-block;
-}
-
-li {
-    list-style-type: none;
 }

@@ -8,6 +8,7 @@
 }
 
 .about-description {
+    font-family: 'Open Sans', sans-serif;
     width: 80%;
     margin: 30px 200px 0 0px;
     text-align: initial;
@@ -21,12 +22,15 @@
 }
 
 .about-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     margin: 140px 0 0 0px;
     width: 60%;
     color: #C83636;
+    font-size: 30px;
 }
 
 .about-subtitle {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #432D90;
     font-size: 20px;
     margin: 10px 0 0px 0;
@@ -46,12 +50,14 @@
 }
 
 #about-options-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
     margin: 0 150px 20px 0;
     color: #6451A6;
 }
 
 .about-option-description {
+    font-family: 'Open Sans', sans-serif;
     width: 60%;
 }
 

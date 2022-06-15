@@ -28,13 +28,13 @@ img {
 }
 
 a {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #255932 !important;
     margin: 0;
     font-size: 18px;
     font-weight: bold;
     width: 120px;
     text-align: center;
-
 }
 
 a:hover {
