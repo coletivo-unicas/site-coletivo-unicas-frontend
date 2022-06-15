@@ -7,7 +7,7 @@ import LogoUnicap from '../../assets/images/logos/logo_unicap.png';
 
 const OurPartnerships = () => {
     return (
-        <div className='our-partnerships'>
+        <div className='our-partnerships' id='partnerships'>
             <h2 className='our-partnerships-title'>NOSSAS PARCERIAS</h2>
             <div className='our-partnerships-logos'>
                 <ul>

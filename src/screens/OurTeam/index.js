@@ -1,18 +1,35 @@
 import React from 'react';
 import CardTeam from '../../components/CardTeam';
 import './style.css';
-import Avatar from '../../assets/images/avatar.jpg';
+import Ana from '../../assets/images/time/ana.svg';
+import Deborah from '../../assets/images/time/deborah.svg';
+import Hanaty from '../../assets/images/time/hanaty.svg';
+import Maria from '../../assets/images/time/maria.svg';
+import BackgroundHive from '../../assets/images/bg_our_team_hive.svg';
+import BackgroundLine from '../../assets/images/bg_our_team_line.svg';
+import You from '../../assets/images/you.svg';
+
 
 const OurTeam = () => {
     return (
         <div id='ourTeam'>
+            <img className='our-team-background-line' src={BackgroundLine} alt='BackgroundLine' />
             <div>
-                <h2 className='our-team-title'>Nosso Time</h2>
+                <h2 className='our-team-title'>NOSSO TIME</h2>
                 <div className='our-team-list'>
                     <ul>
                         <li>
                             <CardTeam
-                                img={Avatar}
+                                img={You}
+                                name='Você'
+                                pronoun='(do jeitinho que você é)'
+                                course='Vem fazer parte dessa mudança com a gente!'
+                                signUp={true}
+                            />
+                        </li>
+                        <li>
+                            <CardTeam
+                                img={Ana}
                                 name='Maria Alice'
                                 pronoun='(ela/dela)'
                                 course='Sistemas para internet'
@@ -20,7 +37,7 @@ const OurTeam = () => {
                         </li>
                         <li>
                             <CardTeam
-                                img={Avatar}
+                                img={Deborah}
                                 name='Joana Silva'
                                 pronoun='(ela/dela)'
                                 course='Ciência da computação'
@@ -28,15 +45,7 @@ const OurTeam = () => {
                         </li>
                         <li>
                             <CardTeam
-                                img={Avatar}
-                                name='Bruna Santos'
-                                pronoun='(ela/dela)'
-                                course='Sistemas para internet'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Avatar}
+                                img={Hanaty}
                                 name='Maria Alice'
                                 pronoun='(ela/dela)'
                                 course='Sistemas para internet'
@@ -44,7 +53,7 @@ const OurTeam = () => {
                         </li>
                         <li>
                             <CardTeam
-                                img={Avatar}
+                                img={Maria}
                                 name='Joana Silva'
                                 pronoun='(ela/dela)'
                                 course='Ciência da computação'
@@ -52,15 +61,7 @@ const OurTeam = () => {
                         </li>
                         <li>
                             <CardTeam
-                                img={Avatar}
-                                name='Bruna Santos'
-                                pronoun='(ela/dela)'
-                                course='Sistemas para internet'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Avatar}
+                                img={Ana}
                                 name='Maria Alice'
                                 pronoun='(ela/dela)'
                                 course='Sistemas para internet'
@@ -68,7 +69,7 @@ const OurTeam = () => {
                         </li>
                         <li>
                             <CardTeam
-                                img={Avatar}
+                                img={Deborah}
                                 name='Joana Silva'
                                 pronoun='(ela/dela)'
                                 course='Ciência da computação'
@@ -76,15 +77,24 @@ const OurTeam = () => {
                         </li>
                         <li>
                             <CardTeam
-                                img={Avatar}
-                                name='Bruna Santos'
+                                img={Hanaty}
+                                name='Maria Alice'
                                 pronoun='(ela/dela)'
                                 course='Sistemas para internet'
+                            />
+                        </li>
+                        <li>
+                            <CardTeam
+                                img={Maria}
+                                name='Joana Silva'
+                                pronoun='(ela/dela)'
+                                course='Ciência da computação'
                             />
                         </li>
                     </ul>
                 </div>
             </div>
+            <img className='our-team-background-hive' src={BackgroundHive} alt='BackgroundHive' />
         </div>
     )
 }

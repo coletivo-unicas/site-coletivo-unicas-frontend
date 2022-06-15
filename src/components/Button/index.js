@@ -5,6 +5,7 @@ const Button = (
     { handlerButton,
         title,
         width,
+        height,
         color,
         border,
         margin
@@ -17,6 +18,7 @@ const Button = (
                     backgroundColor: color,
                     border,
                     width,
+                    height,
                     margin
                 }}>{title}</button>
         </>
