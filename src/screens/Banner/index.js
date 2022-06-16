@@ -27,7 +27,10 @@ const Banner = () => {
                     />
                 </Link>
 
-                <Button title='Fala com a gente' />
+                <Button
+                    title='Fala com a gente'
+                    margin='0 0 0 140px'
+                />
             </div>
         </div>
     );

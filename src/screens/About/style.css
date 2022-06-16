@@ -54,11 +54,13 @@
     font-weight: bold;
     margin: 0 150px 20px 0;
     color: #6451A6;
+    text-align: center;
 }
 
 .about-option-description {
     font-family: 'Open Sans', sans-serif;
-    width: 60%;
+    width: 70%;
+    margin: 0 0px 100px -10px;
 }
 
 .about-background-cloud {

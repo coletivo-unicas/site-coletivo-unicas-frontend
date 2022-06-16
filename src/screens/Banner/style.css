@@ -11,8 +11,9 @@
 }
 
 .banner-button-options {
-    margin: 200px 0 0px 0;
-    transform: translate(33%, -168%);
+    display: flex;
+    justify-content: center;
+    margin: -140px 0 0px 0;
 }
 
 .banner-main {
