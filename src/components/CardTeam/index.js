@@ -4,7 +4,18 @@ import Linkedin from '../../assets/images/linkedin.svg';
 import Github from '../../assets/images/github.svg';
 import Button from '../../components/Button';
 
-const CardTeam = ({ img, name, course, pronoun, signUp }) => {
+const CardTeam = ({ img, name, course, pronoun, signUp, urlLinkedin, urlGitHub }) => {
+    const goToLinkedin = () => {
+        window.open(urlLinkedin, '_blank');
+    }
+    const goToGitHub = () => {
+        window.open(urlGitHub, '_blank');
+    }
+
+    const goToSubscription = () => {
+        window.open('url', '_blank')
+    }
+
     return (
         <div className='card-team'>
             <img src={img} alt='avatar' className='card-team-image' />
@@ -13,8 +24,10 @@ const CardTeam = ({ img, name, course, pronoun, signUp }) => {
             <p className='card-team-infos' id='card-team-course'>{course}</p>
             {!signUp &&
                 <div className='card-team-networks-links'>
-                    <img className='card-team-networks' src={Linkedin} alt='linkedin' />
-                    <img className='card-team-networks' src={Github} alt='github' />
+                    <img className='card-team-networks' src={Linkedin} alt='linkedin'
+                        onClick={goToLinkedin} />
+                    <img className='card-team-networks' src={Github} alt='github'
+                        onClick={goToGitHub} />
                 </div>
             }
             {signUp &&
@@ -23,7 +36,8 @@ const CardTeam = ({ img, name, course, pronoun, signUp }) => {
                         title="Inscreva-se"
                         color="#6451A6"
                         width="110px"
-                        height="34px" />
+                        height="34px"
+                        onClick={goToSubscription} />
                 </div>
             }
 

@@ -19,6 +19,7 @@
 }
 
 #name {
+    width: 100%;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
     color: #AC7C00;
@@ -28,6 +29,7 @@
 .card-team-networks {
     width: 30px;
     margin: 0 20px 0px -10px;
+    cursor: pointer;
 }
 
 .card-team-networks-links {
@@ -51,5 +53,5 @@
 }
 
 #card-team-button {
-    margin: 12px 0px 0 14px;
+    margin: 12px 0px 0 16px;
 }
