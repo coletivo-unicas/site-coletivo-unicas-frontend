@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CardTeam from '../../components/CardTeam';
 import './style.css';
-import Ana from '../../assets/images/time/ana.svg';
-import Deborah from '../../assets/images/time/deborah.svg';
-import Hanaty from '../../assets/images/time/hanaty.svg';
-import Maria from '../../assets/images/time/maria.svg';
 import BackgroundHive from '../../assets/images/bg_our_team_hive.svg';
 import BackgroundLine from '../../assets/images/bg_our_team_line.svg';
 import You from '../../assets/images/you.svg';
-
+import api from "../../services/api";
 
 const OurTeam = () => {
+    const [membersData, setMembersData] = useState([]);
+
+    const getMembers = async () => {
+        await api
+            .get("members")
+            .then((response) => {
+                setMembersData(response.data)
+            })
+            .catch((err) => {
+                console.error("ops! ocorreu um erro" + err);
+            });
+    }
+
+    useEffect(() => {
+        getMembers();
+    }, []);
+
+
     return (
         <div id='ourTeam'>
             <img className='our-team-background-line' src={BackgroundLine} alt='BackgroundLine' />
@@ -27,70 +41,19 @@ const OurTeam = () => {
                                 signUp={true}
                             />
                         </li>
-                        <li>
-                            <CardTeam
-                                img={Ana}
-                                name='Maria Alice'
-                                pronoun='(ela/dela)'
-                                course='Sistemas para internet'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Deborah}
-                                name='Joana Silva'
-                                pronoun='(ela/dela)'
-                                course='Ciência da computação'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Hanaty}
-                                name='Maria Alice'
-                                pronoun='(ela/dela)'
-                                course='Sistemas para internet'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Maria}
-                                name='Joana Silva'
-                                pronoun='(ela/dela)'
-                                course='Ciência da computação'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Ana}
-                                name='Maria Alice'
-                                pronoun='(ela/dela)'
-                                course='Sistemas para internet'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Deborah}
-                                name='Joana Silva'
-                                pronoun='(ela/dela)'
-                                course='Ciência da computação'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Hanaty}
-                                name='Maria Alice'
-                                pronoun='(ela/dela)'
-                                course='Sistemas para internet'
-                            />
-                        </li>
-                        <li>
-                            <CardTeam
-                                img={Maria}
-                                name='Joana Silva'
-                                pronoun='(ela/dela)'
-                                course='Ciência da computação'
-                            />
-                        </li>
+                        {membersData.map((member, id) =>
+                            <li key={id}>
+                                <CardTeam
+                                    img={member.image}
+                                    name={member.name}
+                                    pronoun={`(${member.pronoun})`}
+                                    course={member.course}
+                                    urlLinkedin={member.linkedin}
+                                    urlGitHub={member.github}
+                                />
+                            </li>
+                        )}
+
                     </ul>
                 </div>
             </div>

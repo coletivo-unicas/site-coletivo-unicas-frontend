@@ -1,8 +1,6 @@
 .banner {
     background-color: #A396D1;
     margin: 70px 0 0 0;
-    width: 100%;
-    height: 900px;
 }
 
 .banner-info {
@@ -11,13 +9,16 @@
 }
 
 .banner-button-options {
-    margin: 200px 0 0px 0;
-    transform: translate(33%, -168%);
+    display: inline-flex;
+    justify-content: center;
+    margin: 0px 0 100px 0;
+    width: 100%;
 }
 
 .banner-main {
-    width: 100%;
-    margin: -30px 0 0 0;
+    width: 80%;
+    margin: 0 0 -80px 0;
+
 }
 
 .banner-button,

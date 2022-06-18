@@ -1,4 +1,5 @@
 .about {
+    display: block;
     background-color: #E3DFF1;
 }
 
@@ -8,6 +9,7 @@
 }
 
 .about-description {
+    font-family: 'Open Sans', sans-serif;
     width: 80%;
     margin: 30px 200px 0 0px;
     text-align: initial;
@@ -17,16 +19,21 @@
 
 .about-image {
     width: 300px;
-    margin: 200px 140px 0px 100px;
+    margin: 60px 140px 0px 100px;
 }
 
 .about-title {
-    margin: 140px 0 0 0px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    margin: 0px 0 0 0px;
     width: 60%;
     color: #C83636;
+    font-size: 30px;
 }
 
 .about-subtitle {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
     color: #432D90;
     font-size: 20px;
     margin: 10px 0 0px 0;
@@ -46,17 +53,20 @@
 }
 
 #about-options-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
     margin: 0 150px 20px 0;
     color: #6451A6;
+    text-align: center;
 }
 
 .about-option-description {
-    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    width: 70%;
+    margin: 0 0px 100px -10px;
 }
 
 .about-background-cloud {
     width: 100%;
-    position: absolute;
-    margin: -296px 0 0 0px;
+    margin: -200px 0 0 0px;
 }

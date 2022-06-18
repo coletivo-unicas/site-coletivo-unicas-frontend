@@ -28,17 +28,17 @@ img {
 }
 
 a {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #255932 !important;
     margin: 0;
     font-size: 18px;
     font-weight: bold;
     width: 120px;
     text-align: center;
-
 }
 
 a:hover {
-    background-image: url("../../assets/images/active_menu.svg");
+    background-image: url("../../assets/images/active_menu.svg") !important;
     background-repeat: no-repeat;
     color: #FFF !important;
     background-position: bottom;
