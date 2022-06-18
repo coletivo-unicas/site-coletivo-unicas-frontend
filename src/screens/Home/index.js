@@ -3,27 +3,29 @@ import Banner from '../Banner';
 import './style.css';
 import Header from '../../components/Header';
 import About from '../About';
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import OurTeam from '../OurTeam';
 import Projects from '../Projects';
+import Contact from '../Contact';
 import Footer from '../../components/Footer';
 
 const Home = () => {
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-    }, []);
-    return (
-        <div className='home'>
-            <Header />
-            <Banner />
-            <About />
-            <OurTeam />
-            <Projects />
-            <Footer />
-        </div>
-    );
-}
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  return (
+    <div className="home">
+      <Header />
+      <Banner />
+      <About />
+      <OurTeam />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
 
 export default Home;
