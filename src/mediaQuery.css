@@ -1,88 +1,9 @@
 /* WEB */
-@media (min-width: 1200px) {
-    .about-background-cloud {
-        margin: -280px 0 0 0px;
-    }
-
-    .about-title {
-        margin: 200px 0 0 0px;
-    }
-
-    .about-image {
-        margin: 250px 140px 0px 100px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .about-background-cloud {
-        margin: -180px 0 0 0px;
-    }
-
-    .about-title {
-        margin: 360px 0 0 0px;
-    }
-
-    .about-image {
-        margin: 400px 140px 0px 100px;
-    }
-
-    .banner-button-options {
-        margin: -160px 0 0px 0;
-    }
-
-}
-
-@media (min-width: 1600px) {
-    .banner-main {
-        width: 90%;
-        margin: -100px 0 0 0;
-    }
-
-    .about-background-cloud {
-        margin: -210px 0 0 0px;
-    }
-
-    .about-title {
-        margin: 380px 0 0 0px;
-    }
-
-    .about-image {
-        margin: 420px 140px 0px 100px;
-    }
-
-
-}
 
 @media (min-width: 1800px) {
-    .about-title {
-        margin: 420px 0 0 0px;
-    }
-
-    .about-image {
-        margin: 480px 140px 0px 100px;
-    }
-
-    .banner-button-options {
-        margin: -180px 0 0px 0;
-    }
-}
-
-@media (min-width: 1900px) {
-    .banner-main {
-        width: 86%;
-        margin: -148px 0 0 0;
-    }
 
     .about-background-cloud {
-        margin: -240px 0 0 0px;
-    }
-
-    .about-title {
-        margin: 460px 0 0 0px;
-    }
-
-    .about-image {
-        margin: 510px 140px 0px 100px;
+        margin: -250px 0 0 0px;
     }
 
 }

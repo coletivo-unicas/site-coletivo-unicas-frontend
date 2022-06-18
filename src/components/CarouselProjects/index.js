@@ -11,7 +11,6 @@ const CarouselProjects = ({ handlerButton, image, title }) => {
         }
     }, []);
     return (
-
         <div>
             <Carousel
                 itemsToShow={itemsToShowDevice}

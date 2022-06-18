@@ -32,6 +32,7 @@ const Banner = () => {
                     margin='0 0 0 140px'
                 />
             </div>
+
         </div>
     );
 }
