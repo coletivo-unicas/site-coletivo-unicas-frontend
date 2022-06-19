@@ -51,14 +51,6 @@ const Header = () => {
                         smooth={true}
                         offset={-70}
                         duration={100}
-                        to="partnerships">Parcerias
-                    </Link>
-                    <Link
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={100}
                         to='contact'>Contato
                     </Link>
                 </div>

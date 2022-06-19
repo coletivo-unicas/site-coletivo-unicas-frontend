@@ -9,11 +9,12 @@ const ProjectDetailsCarousel = () => {
     return (
         <div>
             <Carousel
+                id='project-carousel'
                 itemsToShow={2}
                 pagination={true}
                 showArrows={false}
-                enableAutoPlay={true}
-                autoPlaySpeed={2000}
+                // enableAutoPlay={true}
+                // autoPlaySpeed={2000}
             >
                 <img className='project-details-carousel-image' src={BannerImage} alt='projects' />
                 <img className='project-details-carousel-image' src={Retrato} alt='Retrato' />

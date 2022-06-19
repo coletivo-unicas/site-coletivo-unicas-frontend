@@ -53,7 +53,6 @@ const OurTeam = () => {
                                 />
                             </li>
                         )}
-
                     </ul>
                 </div>
             </div>

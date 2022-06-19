@@ -13,7 +13,7 @@ const CardTeam = ({ img, name, course, pronoun, signUp, urlLinkedin, urlGitHub }
     }
 
     const goToSubscription = () => {
-        window.open('url', '_blank')
+        window.open('https://forms.gle/SoyBSfJ3wXr73qS49', '_blank')
     }
 
     return (
@@ -36,8 +36,9 @@ const CardTeam = ({ img, name, course, pronoun, signUp, urlLinkedin, urlGitHub }
                         title="Inscreva-se"
                         color="#6451A6"
                         width="110px"
-                        height="34px"
-                        onClick={goToSubscription} />
+                        height="38px"
+                        padding="0px 0 6px 0"
+                        handlerButton={goToSubscription} />
                 </div>
             }
 

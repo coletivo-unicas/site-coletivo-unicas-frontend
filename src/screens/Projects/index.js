@@ -12,9 +12,9 @@ const Projects = () => {
         <div id='projects'>
             <div>
                 <h2 className='projects-title'>CONHEÇA OS NOSSOS PROJETOS</h2>
+
                 <CarouselProjects
                     handlerButton={() => setModalShow(true)}
-                    title='Technovation Girls'
                     image={BannerImage} />
                 <div>
                     <ModalProjects show={modalShow}

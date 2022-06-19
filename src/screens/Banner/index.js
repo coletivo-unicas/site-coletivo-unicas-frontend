@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import Button from '../../components/Button';
-import MainBanner from '../../assets/images/banner.svg';
+import MainBanner from '../../assets/images/bg_home.svg';
 import { Link } from "react-scroll";
 
 const Banner = () => {
@@ -12,7 +12,7 @@ const Banner = () => {
             </div>
             <div className='banner-button-options'>
                 <Link
-                    activeClass="banner-button"
+                    id='banner-button'
                     spy={true}
                     smooth={true}
                     offset={-70}

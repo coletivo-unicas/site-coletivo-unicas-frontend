@@ -20,6 +20,7 @@
 .our-team-background-line {
     margin: 100px 0 0 0;
     position: absolute;
+    z-index: 0;
 }
 
 .our-team-background-hive {
