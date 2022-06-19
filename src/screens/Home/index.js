@@ -10,6 +10,8 @@ import Projects from '../Projects';
 import Contact from '../Contact';
 import Footer from '../../components/Footer';
 import OurPartnerships from '../OurPartnerships';
+import Depositions from '../../components/CarouselDepositions';
+
 
 const Home = () => {
 
@@ -23,10 +25,12 @@ const Home = () => {
             <Banner />
             <About />
             <Projects />
+            <Depositions />
             <OurTeam />
             <OurPartnerships />
             <Contact />
             <Footer />
+
         </div>
     );
 }
