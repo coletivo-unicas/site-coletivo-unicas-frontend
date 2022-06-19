@@ -80,6 +80,12 @@
     .about-background-cloud{
         margin-bottom: -170px;
     }
+    .contact-title{
+        margin-left: 55px;
+    }
+    .contact-form{
+        margin-left: -40px;
+    }
    
 }
 @media (max-width:375px){
