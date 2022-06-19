@@ -42,7 +42,7 @@ const Header = () => {
                                     smooth={true}
                                     offset={-70}
                                     duration={100}
-                                    to="ourTeam">Nosso time
+                                    to="projects">Projetos
                                 </Link>
                                 <Link
                                     activeClass="active"
@@ -50,7 +50,7 @@ const Header = () => {
                                     smooth={true}
                                     offset={-70}
                                     duration={100}
-                                    to="projects">Projetos
+                                    to="ourTeam">Nosso time
                                 </Link>
                                 <Link
                                     activeClass="active"
