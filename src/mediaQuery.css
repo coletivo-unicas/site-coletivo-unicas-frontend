@@ -10,3 +10,117 @@
 
 
 /* MOBILE */
+
+@media (max-width:420px){
+
+    .about-background-cloud {
+        margin: -250px 0 0 0px;
+    }
+    .banner-button-options{
+        margin-top: 100px;
+    }
+    .banner-main{
+        width: 100%;
+    }
+    .about-options{
+        flex-direction: column;
+    }
+    .img-qs{
+       position:static;
+       margin-left: -60px;
+       margin-bottom: 40px;
+       margin-top: -30px;
+    }
+    .about-container{
+        flex-direction: column ;
+        width: 450px;
+        margin: 20px;
+    }
+   
+}
+@media (max-width:375px){
+
+    .about-background-cloud {
+        margin: -250px 0 0 0px;
+    }
+    .banner-button-options{
+        margin-top: 150px;
+    }
+    .banner-main{
+        width: 100%;
+    }
+    .about-options{
+        flex-direction: column;
+    }
+    .img-qs{
+       position:static;
+       margin-left: -90px;
+       margin-bottom: 40px;
+       margin-top: -30px;
+    }
+    .about-container{
+        flex-direction: column ;
+        width: 400px;
+        margin: 20px;
+    }
+   
+}
+@media (max-width:320px){
+
+    .about-background-cloud {
+        margin: -250px 0 0 0px;
+    }
+    .banner-button-options{
+        margin-top: 150px;
+    }
+    .banner-main{
+        width: 100%;
+    }
+    .about-options{
+        flex-direction:column;
+        margin-left: 100px;
+        
+        
+    }
+    .img-qs{
+       position:static;
+       margin-left: -110px;
+       margin-bottom: 40px;
+       margin-top: -30px;
+    }
+    .about-container{
+        flex-direction: column ;
+        width: 350px;
+        margin: 20px;
+    }
+    #responsive-navbar-nav{
+       
+        margin-left: 180px;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+    .menu{
+       
+        border:none;
+        flex-direction: column !important;
+        padding: 0;
+        position: static !important;
+        margin-left: 230px;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        margin-top: -45px;
+        align-items: center;
+        
+        
+        
+        
+    }
+    
+   
+    
+   
+   
+}
+
+   

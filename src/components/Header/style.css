@@ -43,3 +43,26 @@ a:hover {
     color: #FFF !important;
     background-position: bottom;
 }
+.menu{
+    
+    border:none;
+    flex-direction: column !important;
+    padding: 0;
+    position: static !important;
+    margin-left: 300px;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: -45px;
+    align-items: center;
+    
+    
+    
+    
+}
+#responsive-navbar-nav{
+    background-color: #f1d3ec;
+    margin-left: 230px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
