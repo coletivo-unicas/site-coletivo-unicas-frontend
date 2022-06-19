@@ -11,7 +11,7 @@ const Projects = () => {
     return (
         <div id='projects'>
             <div>
-                <h2 className='projects-title'>CONHEÇA OS NOSSOS PROJETOS</h2>
+                <h2 className='projects-title'>NOSSOS PROJETOS</h2>
                 <CarouselProjects
                     handlerButton={() => setModalShow(true)}
                     title='Technovation Girls'
