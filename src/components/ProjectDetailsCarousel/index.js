@@ -1,11 +1,8 @@
 import React from 'react';
 import './style.css';
 import Carousel from 'react-elastic-carousel';
-import ProjectImage01 from '../../assets/Images/project01.jpg';
-import ProjectImage02 from '../../assets/Images/project02.jpg';
-import ProjectImage03 from '../../assets/Images/project03.jpg';
 
-const ProjectDetailsCarousel = () => {
+const ProjectDetailsCarousel = ({ data }) => {
     return (
         <div>
             <Carousel
@@ -15,9 +12,9 @@ const ProjectDetailsCarousel = () => {
                 enableAutoPlay={true}
                 autoPlaySpeed={2000}
             >
-                <img className='project-details-carousel-image' src={ProjectImage01} alt='projects' />
-                <img className='project-details-carousel-image' src={ProjectImage02} alt='Retrato' />
-                <img className='project-details-carousel-image' src={ProjectImage03} alt='projects' />
+                {data.map((url, id) =>
+                    <img key={id} className='project-details-carousel-image' src={url.image} alt='projects' />
+                )}
             </Carousel>
         </div>
     )
