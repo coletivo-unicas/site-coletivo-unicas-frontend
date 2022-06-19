@@ -21,7 +21,6 @@
 
 }
 
-.banner-button,
-a:hover {
-    background-image: none !important;
+#banner-button:hover {
+    background-image: none;
 }

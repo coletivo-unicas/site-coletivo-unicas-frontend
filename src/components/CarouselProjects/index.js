@@ -1,43 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import BackgroundProjectBorder from '../../assets/images/bg_project_border.svg';
+import BackgroundProjectBorder from '../../assets/Images/bg_project_border.svg';
 import Carousel from 'react-elastic-carousel';
+import api from "../../services/api";
 
-const CarouselProjects = ({ handlerButton, image, title }) => {
+const CarouselProjects = ({ handlerButton }) => {
     let [itemsToShowDevice, setItemsToShowDevice] = useState(3);
+    const [projectsData, setProjectsData] = useState([]);
+
+    const getProjects = async () => {
+        await api
+            .get("projects")
+            .then((response) => {
+                setProjectsData(response.data)
+            })
+            .catch((err) => {
+                console.error("ops! ocorreu um erro" + err);
+            });
+    }
+
     useEffect(() => {
+        getProjects();
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             setItemsToShowDevice(1);
         }
     }, []);
+
     return (
-        <div>
+        <div className='carousel-projects'>
             <Carousel
                 itemsToShow={itemsToShowDevice}
                 pagination={false}
             >
-                <div className='carousel-projects-background' onClick={handlerButton}>
-                    <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
-                    <img className='carousel-projects-image' src={image} alt='projects' />
-                    <label className='carousel-projects-title'>
-                        {title}
-                    </label>
-                </div>
-                <div className='carousel-projects-background' onClick={handlerButton}>
-                    <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
-                    <img className='carousel-projects-image' src={image} alt='projects' />
-                    <label className='carousel-projects-title'>
-                        {title}
-                    </label>
-                </div>
-                <div className='carousel-projects-background' onClick={handlerButton}>
-                    <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
-                    <img className='carousel-projects-image' src={image} alt='projects' />
-                    <label className='carousel-projects-title'>
-                        {title}
-                    </label>
-                </div>
-            </Carousel>;
+                {projectsData.map((project, id) =>
+                    <div key={id} className='carousel-projects-background' onClick={handlerButton}>
+                        <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
+                        <img className='carousel-projects-image' src={project.images[0].image} alt='projects' />
+                        <label className='carousel-projects-title'>
+                            {project.title}
+                        </label>
+                    </div>
+                )}
+            </Carousel>
         </div>
     )
 }

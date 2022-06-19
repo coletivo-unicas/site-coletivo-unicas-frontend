@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css';
-import LogoMinas from '../../assets/images/logos/logo_minas.png';
-import LogoPortoDigital from '../../assets/images/logos/logo_porto_digital.png';
-import LogoTechnovationGirlsBr from '../../assets/images/logos/logo_technovation_girls_br.png';
-import LogoUnicap from '../../assets/images/logos/logo_unicap.png';
+import LogoMinas from '../../assets/Images/logos/logo_minas.png';
+import LogoPortoDigital from '../../assets/Images/logos/logo_porto_digital.png';
+import LogoTechnovationGirlsBr from '../../assets/Images/logos/logo_technovation_girls_br.png';
+import LogoUnicap from '../../assets/Images/logos/logo_unicap.png';
 
 const OurPartnerships = () => {
     return (
