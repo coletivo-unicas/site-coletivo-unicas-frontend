@@ -1,8 +1,8 @@
 import React from 'react';
 import Logo from '../../assets/images/logo_unicas.svg';
-import about_01 from '../../assets/images/about_01.svg';
-import about_02 from '../../assets/images/about_02.svg';
-import about_03 from '../../assets/images/about_03.svg';
+import Equality from '../../assets/images/equality.svg';
+import Equity from '../../assets/images/equity.svg';
+import Diversity from '../../assets/images/diversity.svg';
 import './style.css';
 import BackgroundCloud from '../../assets/images/bg_home_slice.svg';
 
@@ -40,7 +40,7 @@ const About = () => {
 
             <div className='about-options'>
                 <div>
-                    <img className='about-options-image' src={about_01} alt='banner' />
+                    <img className='about-options-image' src={Equality} alt='banner' />
                     <p id='about-options-title'>Igualdade Social e de Gênero</p>
                     <p className='about-option-description'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -48,7 +48,7 @@ const About = () => {
                 </div>
 
                 <div>
-                    <img className='about-options-image' src={about_02} alt='banner' />
+                    <img className='about-options-image' src={Equity} alt='banner' />
                     <p id='about-options-title'>Equidade Étnico-Racial</p>
                     <p className='about-option-description'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
 
                 <div>
-                    <img className='about-options-image' src={about_03} alt='banner' />
+                    <img className='about-options-image' src={Diversity} alt='banner' />
                     <p id='about-options-title'>Igualdade e respeito à diversidade</p>
                     <p className='about-option-description'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.

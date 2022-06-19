@@ -9,7 +9,6 @@ const ProjectDetailsCarousel = () => {
     return (
         <div>
             <Carousel
-                id='project-carousel'
                 itemsToShow={2}
                 pagination={true}
                 showArrows={false}
