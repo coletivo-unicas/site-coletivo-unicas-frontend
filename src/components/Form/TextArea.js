@@ -1,10 +1,13 @@
 import React from 'react';
+import { Form } from 'react-bootstrap';
+import { FloatingLabel } from 'react-bootstrap';
+import Error from '../Helper/Error';
 
 const TextArea = ({
   id,
   label,
   placeholder,
-  rows,
+  // rows,
   value,
   type,
   onChange,
@@ -13,22 +16,40 @@ const TextArea = ({
 }) => {
   return (
     <div className="form-group">
-      <label htmlFor={id}>{label}</label>
-      <textarea
-        id={id}
-        name={id}
-        placeholder={placeholder}
-        rows={rows}
-        value={value}
-        type={type}
-        onChange={onChange}
-        onBlur={onBlur}
-        // {...props}
-        //onChange={({ target }) => setValue(target.value)}
-        className="form-control"
-      />
-      {/* <p>value: {value}</p> */}
-      {error && <p>{error}</p>}
+      <FloatingLabel
+        controlId={id}
+        label={label}
+        className="mb-3"
+        style={{ color: '#F2BBBB', fontSize: '0.9rem' }}
+      >
+        {/* <label htmlFor={id}>{label}</label> */}
+        <Form.Control
+          as="textarea"
+          id={id}
+          name={id}
+          placeholder={placeholder}
+          // rows={rows}
+          value={value}
+          type={type}
+          onChange={onChange}
+          onBlur={onBlur}
+          // {...props}
+          //onChange={({ target }) => setValue(target.value)}
+          className="form-control"
+          style={{
+            height: '10rem',
+            color: '#D9D3EF',
+            fontWeight: 400,
+            backgroundColor: 'transparent',
+            borderColor: '#F2BBBB',
+            borderWidth: 1,
+            // placeholder: '#F2BBBB',
+          }}
+        />
+        {/* <p>value: {value}</p> */}
+        <Error error={error} />
+        {/* {error && <p>{error}</p>} */}
+      </FloatingLabel>
     </div>
   );
 };

@@ -80,7 +80,7 @@ const Contact = () => {
       {/* <div className="col-md-8"> */}
       <div className="contact-texts">
         {/* <div className="container"> */}
-        <h2 className="contact-title">Entre em contato com a gente</h2>
+        <h3 className="contact-title">ENTRE EM CONTATO COM A GENTE</h3>
         {/* <div className="contact-general-info">
           <h6>Informações Gerais</h6>
           <p>
@@ -114,7 +114,7 @@ const Contact = () => {
               {/* <div className="col-md"> */}
               <div className="contact-form-personal">
                 <Input
-                  label="Nome"
+                  label="Nome*"
                   id="name"
                   type="text"
                   placeholder="Nome"
@@ -125,7 +125,7 @@ const Contact = () => {
                 {/* </div> */}
                 {/* <div className="col-md"> */}
                 <Input
-                  label="Email"
+                  label="Email*"
                   id="email"
                   type="text"
                   placeholder="seuemail@exemplo.com"
@@ -140,6 +140,7 @@ const Contact = () => {
               <Select
                 id="who"
                 label="Eu sou..."
+                // placeholderOption="Eu sou..."
                 options={whoOptions}
                 value={who}
                 setValue={setWho}
@@ -148,13 +149,14 @@ const Contact = () => {
               <Select
                 id="contactReason"
                 label="Motivo de Contato"
+                // placeholderOption="Motivo de Contato"
                 options={contactReasonOptions}
                 value={contactReason}
                 setValue={setContactReason}
               />
 
               <TextArea
-                label="Sua Mensagem:"
+                label="Sua mensagem"
                 id="message"
                 placeholder="Deixe aqui sua mensagem que teremos o maior prazer em te responder!"
                 rows="5"

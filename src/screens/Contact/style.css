@@ -11,6 +11,7 @@
   margin: 0rem;
   padding: 2rem 0rem 2rem 2rem;
   align-self: center;
+  text-align: center;
 }
 
 .contact-image {
@@ -26,8 +27,7 @@
 
 .contact-title {
   color: #D9D3EF;
-  text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .contact-general-info {
@@ -52,6 +52,15 @@
   margin-top: 2rem;
 }
 
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
 
 @media (max-width: 60rem) {
   .contact{
@@ -63,6 +72,12 @@
   .contact-texts{
     max-width: 100%;
     min-width: 90%;
+    text-align: center;
+    padding-left: 0rem;
+    padding-bottom: 0rem;
+  }
+  .contact-form {
+    background-color: '#6451A6';
   }
   .contact-form-personal {
     grid-template-columns: 1fr;

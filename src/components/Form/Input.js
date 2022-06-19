@@ -1,4 +1,6 @@
 import React from 'react';
+import { FloatingLabel, Form } from 'react-bootstrap';
+import Error from '../Helper/Error';
 
 const Input = ({
   id,
@@ -12,22 +14,40 @@ const Input = ({
   // ...props
 }) => {
   return (
-    <div className="form-floating mb-3 mt-3">
-      <input
-        id={id}
-        name={id}
-        placeholder={placeholder}
-        value={value}
-        type={type}
-        onChange={onChange}
-        onBlur={onBlur}
-        className="form-control"
-        // {...props}
-      />
-      <label htmlFor={id}>{label}</label>
-      {/* <p>value: {value}</p> */}
-      {error && <p>{error}</p>}
-    </div>
+    <>
+      {/* // <div className="form-floating mb-3 mt-3"> */}
+      {/* <input */}
+      <FloatingLabel
+        controlId={id}
+        label={label}
+        className="mb-3"
+        style={{ color: '#F2BBBB', fontSize: '0.9rem' }}
+      >
+        <Form.Control
+          id={id}
+          name={id}
+          placeholder={placeholder}
+          value={value}
+          type={type}
+          onChange={onChange}
+          onBlur={onBlur}
+          className="form-control"
+          style={{
+            color: '#F2BBBB',
+            fontWeight: 400,
+            backgroundColor: 'transparent',
+            borderColor: '#F2BBBB',
+            borderWidth: 1,
+          }}
+          // {...props}
+        />
+        {/* <label htmlFor={id}>{label}</label> */}
+        {/* <p>value: {value}</p> */}
+        <Error error={error} />
+        {/* {error && <p className="text-bg-warning">{error}</p>} */}
+        {/* </div> */}
+      </FloatingLabel>
+    </>
   );
 };
 
