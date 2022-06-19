@@ -14,7 +14,7 @@ const Select = ({
   return (
     <div className="form-group">
       <FloatingLabel
-        controlId={id}
+        // controlId={id}
         label={label}
         className="mb-3"
         style={{ color: '#F2BBBB', fontSize: '0.9rem' }}

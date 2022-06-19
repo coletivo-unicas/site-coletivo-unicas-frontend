@@ -18,7 +18,6 @@ const Input = ({
       {/* // <div className="form-floating mb-3 mt-3"> */}
       {/* <input */}
       <FloatingLabel
-        controlId={id}
         label={label}
         className="mb-3"
         style={{ color: '#F2BBBB', fontSize: '0.9rem' }}
