@@ -4,6 +4,7 @@ import depositions_mariana from '../../assets/images/depositions_mariana.jpg';
 import depositions_hanaty from '../../assets/images/depositions_hanaty.jpeg';
 import depositions_deborah from '../../assets/images/depositions_deborah.jpg';
 import depositions_mayara from '../../assets/images/depositions_mayara.jpeg';
+import img_depoimentos_leaf from '../../assets/images/img_depoiments_leaf.svg';
 import Carousel from 'react-elastic-carousel';
 import './style.css';
 
@@ -61,9 +62,10 @@ const Depositions = () => {
                         "O UNICAs foi uma das maiores transformações da minha vida! 
                         Poder contar com essa rede de apoio me fez conhecer mulheres 
                         incríveis, somar e compartilhar conhecimentos."
-                        </p>
+                        </p>                        
                         <p id='depositions-name'>Deborah Camila</p>
                         <p id='depositions-descrition'>Ex aluna da UNICAP</p>
+              
                     </div>
 
                     <div> 
@@ -78,7 +80,9 @@ const Depositions = () => {
                         <p id='depositions-descrition'>Aluna de Sistemas para Internet</p>
                     </div>
                                                     
-            </Carousel>;
+            </Carousel>;        
+            <img className='depositions-plant' src={img_depoimentos_leaf} alt='depositions-plant'/>
+
         </div>
     )
 }

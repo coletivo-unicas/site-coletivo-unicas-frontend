@@ -37,11 +37,13 @@
 #depositions-descrition {
     font-family: 'Inter';
     font-weight: bold;
-    margin: 0 0 0 30px;
+    margin: 0;
     color: #FCFCFC;
     text-align: center;
 }
 
-.sc-gKXOVf jhmYzC rec rec-dot {
-   stroke: #d30fb2;
+.depositions-plant {
+    width: 200px;
+    margin: -38px 0px 0 -30px;
+    position: absolute;
 }
