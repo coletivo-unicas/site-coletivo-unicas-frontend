@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import BackgroundProjectBorder from '../../assets/images/bg_project_border.svg';
+import BackgroundProjectBorder from '../../assets/Images/bg_project_border.svg';
 import Carousel from 'react-elastic-carousel';
 import api from "../../services/api";
 
-const CarouselProjects = ({ handlerButton, image }) => {
+const CarouselProjects = ({ handlerButton }) => {
     let [itemsToShowDevice, setItemsToShowDevice] = useState(3);
     const [projectsData, setProjectsData] = useState([]);
 
@@ -21,13 +21,11 @@ const CarouselProjects = ({ handlerButton, image }) => {
 
     useEffect(() => {
         getProjects();
-    }, []);
-
-    useEffect(() => {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             setItemsToShowDevice(1);
         }
     }, []);
+
     return (
         <div className='carousel-projects'>
             <Carousel
@@ -37,9 +35,9 @@ const CarouselProjects = ({ handlerButton, image }) => {
                 {projectsData.map((project, id) =>
                     <div key={id} className='carousel-projects-background' onClick={handlerButton}>
                         <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
-                        <img className='carousel-projects-image' src={image} alt='projects' />
+                        <img className='carousel-projects-image' src={project.images[0].image} alt='projects' />
                         <label className='carousel-projects-title'>
-                            {project.project.title}
+                            {project.title}
                         </label>
                     </div>
                 )}

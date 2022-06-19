@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import Logo from '../../assets/images/logo_header.svg';
+import Logo from '../../assets/Images/logo_header.svg';
 import './style.css';
 import { Link } from "react-scroll";
 

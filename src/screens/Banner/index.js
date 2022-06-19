@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import Button from '../../components/Button';
-import MainBanner from '../../assets/images/bg_home.svg';
+import MainBanner from '../../assets/Images/bg_home.svg';
 import { Link } from "react-scroll";
 
 const Banner = () => {

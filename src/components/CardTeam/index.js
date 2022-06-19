@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
-import Linkedin from '../../assets/images/linkedin.svg';
-import Github from '../../assets/images/github.svg';
+import Linkedin from '../../assets/Images/linkedin.svg';
+import Github from '../../assets/Images/github.svg';
 import Button from '../../components/Button';
 
 const CardTeam = ({ img, name, course, pronoun, signUp, urlLinkedin, urlGitHub }) => {

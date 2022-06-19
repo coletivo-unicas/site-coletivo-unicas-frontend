@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import CardTeam from '../../components/CardTeam';
 import './style.css';
-import BackgroundHive from '../../assets/images/bg_our_team_hive.svg';
-import BackgroundLine from '../../assets/images/bg_our_team_line.svg';
-import You from '../../assets/images/you.svg';
+import BackgroundHive from '../../assets/Images/bg_our_team_hive.svg';
+import BackgroundLine from '../../assets/Images/bg_our_team_line.svg';
+import You from '../../assets/Images/you.svg';
 import api from "../../services/api";
 
 const OurTeam = () => {

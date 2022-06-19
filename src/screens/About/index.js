@@ -1,10 +1,10 @@
 import React from 'react';
-import Logo from '../../assets/images/logo_unicas.svg';
-import Equality from '../../assets/images/equality.svg';
-import Equity from '../../assets/images/equity.svg';
-import Diversity from '../../assets/images/diversity.svg';
+import Logo from '../../assets/Images/logo_unicas.svg';
+import Equality from '../../assets/Images/equality.svg';
+import Equity from '../../assets/Images/equity.svg';
+import Diversity from '../../assets/Images/diversity.svg';
 import './style.css';
-import BackgroundCloud from '../../assets/images/bg_home_slice.svg';
+import BackgroundCloud from '../../assets/Images/bg_home_slice.svg';
 
 
 const About = () => {
