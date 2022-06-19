@@ -43,3 +43,21 @@ a:hover {
     color: #FFF !important;
     background-position: bottom;
 }
+.menu{
+    
+    border:none;
+    flex-direction: column !important;
+    padding: 0;
+    position: static !important;
+    margin-left: 300px;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: -45px;
+    align-items: center;
+    
+    
+    
+    
+}
+
