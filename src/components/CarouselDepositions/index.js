@@ -1,10 +1,10 @@
 import React from 'react';
-import depositions_rayssa from '../../assets/Images/depositions_rayssa.jpeg';
-import depositions_mariana from '../../assets/Images/depositions_mariana.jpg';
-import depositions_hanaty from '../../assets/Images/depositions_hanaty.jpeg';
-import depositions_deborah from '../../assets/Images/depositions_deborah.jpg';
-import depositions_mayara from '../../assets/Images/depositions_mayara.jpeg';
-import img_depoimentos_leaf from '../../assets/Images/img_depoiments_leaf.svg';
+import depositions_rayssa from '../../assets/images/depositions_rayssa.jpeg';
+import depositions_mariana from '../../assets/images/depositions_mariana.jpg';
+import depositions_hanaty from '../../assets/images/depositions_hanaty.jpeg';
+import depositions_deborah from '../../assets/images/depositions_deborah.jpg';
+import depositions_mayara from '../../assets/images/depositions_mayara.jpeg';
+import img_depoimentos_leaf from '../../assets/images/img_depoiments_leaf.svg';
 import Carousel from 'react-elastic-carousel';
 import './style.css';
 
