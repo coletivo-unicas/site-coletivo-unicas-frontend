@@ -36,7 +36,7 @@ const Banner = () => {
                     to='contact'>
                     <Button
                         title='Fala com a gente'
-                        margin='0 0 0 140px'
+                        margin='0 0 0 120px'
                         width='170px'
                     />
                 </Link>

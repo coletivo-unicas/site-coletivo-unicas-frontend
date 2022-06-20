@@ -43,27 +43,29 @@
 .about-options {
     display: inline-flex;
     text-align: center;
-    margin: 60px 0 100px 140px;
+    margin: 60px 20px 100px 20px;
+    align-items: center;
 }
 
 .about-options-image {
     width: 160px;
-    margin: 0 0 30px -160px;
+    margin: 0 0 30px 0px;
 
 }
 
 #about-options-title {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
-    margin: 0 150px 20px 0;
+    margin: 0 0px 20px 0;
     color: #6451A6;
     text-align: center;
 }
 
 .about-option-description {
     font-family: 'Open Sans', sans-serif;
-    width: 70%;
-    margin: 0 0px 100px -10px;
+    width: 80%;
+    margin: 0 0px 100px 50px;
+
 }
 
 .about-background-cloud {

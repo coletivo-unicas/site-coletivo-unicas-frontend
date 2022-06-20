@@ -43,7 +43,8 @@ const About = () => {
                     <img className='about-options-image' src={Equality} alt='banner' />
                     <p id='about-options-title'>Igualdade Social e de Gênero</p>
                     <p className='about-option-description'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Promovendo e fortalecendo a igualdade em direitos, responsabilidades
+                        e oportunidades para mulheres, bem como para todos os outros genêros.
                     </p>
                 </div>
 
@@ -51,7 +52,8 @@ const About = () => {
                     <img className='about-options-image' src={Equity} alt='banner' />
                     <p id='about-options-title'>Equidade Étnico-Racial</p>
                     <p className='about-option-description'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Garatindo que pessoas tenham condições de oportunidade para se desenvolverem,
+                        prezando sempre o reconhecimento de suas próprias características.
                     </p>
                 </div>
 
@@ -59,7 +61,8 @@ const About = () => {
                     <img className='about-options-image' src={Diversity} alt='banner' />
                     <p id='about-options-title'>Igualdade e respeito à diversidade</p>
                     <p className='about-option-description'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Estimulando a igualdade de oportunidades sem preconceitos, incentivando e valorizando
+                        a diversidade, trascendendo os limites da tolerância e construindo relações sociais onde todos se respeitem.
                     </p>
                 </div>
             </div>
