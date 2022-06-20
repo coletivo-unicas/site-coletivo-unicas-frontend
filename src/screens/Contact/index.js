@@ -6,7 +6,7 @@ import useForm from '../../Hooks/useFormInput';
 import './style.css';
 
 const FORM_ENDPOINT =
-  'https://public.herotofu.com/v1/d9c2d6c0-f01f-11ec-94cd-436cd72d679b';
+  'https://public.herotofu.com/v1/b1ac43c0-f041-11ec-94cd-436cd72d679b';
 
 const Contact = () => {
   const name = useForm();
@@ -36,12 +36,11 @@ const Contact = () => {
   const [submitted, setSubmitted] = React.useState(false);
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     if (name.validate() && email.validate() && message.validate()) {
-      console.log('Enviar');
-      console.log(name);
-      console.log(message);
-      console.log(email);
+      name.setValue(`${name.value} (${who})`);
+      message.setValue(
+        `Motivo de contato: ${contactReason} / Mensagem: ${message.value}`,
+      );
       setTimeout(() => {
         setSubmitted(true);
       }, 100);
@@ -51,7 +50,12 @@ const Contact = () => {
   };
 
   if (submitted) {
-    console.log('formulário enviado!');
+    name.setValue('');
+    email.setValue('');
+    message.setValue('');
+    setWho('');
+    setContactReason('');
+    setSubmitted(false);
   }
 
   return (
