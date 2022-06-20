@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import Button from '../../components/Button';
-import MainBanner from '../../assets/Images/bg_home.svg';
+import MainBanner from '../../assets/images/bg_home.svg';
 import { Link } from "react-scroll";
 
 const Banner = () => {
@@ -18,12 +18,13 @@ const Banner = () => {
                     offset={-70}
                     duration={100}
                     to='projects'>
-                    <Button
+                    <Button 
                         title='Conheça nossos projetos'
                         color='transparent'
                         border='2px solid #FFF'
                         width='240px'
                         margin='0px 20px 150px 0px'
+                        font-size='px'
                     />
                 </Link>
 

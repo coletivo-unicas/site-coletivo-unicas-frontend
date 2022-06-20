@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css';
 import Carousel from 'react-elastic-carousel';
-import ProjectImage01 from '../../assets/Images/project01.jpg';
-import ProjectImage02 from '../../assets/Images/project02.jpg';
-import ProjectImage03 from '../../assets/Images/project03.jpg';
+import ProjectImage01 from '../../assets/images/project01.jpg';
+import ProjectImage02 from '../../assets/images/project02.jpg';
+import ProjectImage03 from '../../assets/images/project03.jpg';
 
 const ProjectDetailsCarousel = () => {
     return (

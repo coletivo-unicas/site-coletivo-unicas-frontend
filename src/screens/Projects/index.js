@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import CarouselProjects from '../../components/CarouselProjects';
 import './style.css';
 import ModalProjects from '../../components/ModalProjects';
-import BackgroundProjects from '../../assets/Images/bg_projects.svg';
-import BannerImage from '../../assets/Images/banner.jpg';
+import BackgroundProjects from '../../assets/images/bg_projects.svg';
+import BannerImage from '../../assets/images/banner.jpg';
 
 const Projects = () => {
     const [modalShowData, setModalShowData] = useState(false);

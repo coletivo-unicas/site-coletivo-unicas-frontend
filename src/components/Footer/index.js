@@ -1,8 +1,8 @@
 import React from 'react';
-import EmailSvg from '../../assets/Icons/socialmedia/EmailSvg'; // [Import .SVG] FORMA 3
-import LinkedinSvg from '../../assets/Icons/socialmedia/LinkedinSvg';
-import GithubSvg from '../../assets/Icons/socialmedia/GithubSvg';
-import InstagramSvg from '../../assets/Icons/socialmedia/InstagramSvg';
+import EmailSvg from '../../assets/icons/socialmedia/EmailSvg'; // [Import .SVG] FORMA 3
+import LinkedinSvg from '../../assets/icons/socialmedia/LinkedinSvg';
+import GithubSvg from '../../assets/icons/socialmedia/GithubSvg';
+import InstagramSvg from '../../assets/icons/socialmedia/InstagramSvg';
 import './style.css';
 // import icEmail from '../../assets/icons/socialmedia/ic_email.svg';  // [Import .SVG] FORMA 1
 // import { ReactComponent as IcEmail } from '../../assets/icons/socialmedia/ic_email.svg'; // [Import .SVG] FORMA 2
