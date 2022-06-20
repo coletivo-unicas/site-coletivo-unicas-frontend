@@ -128,12 +128,6 @@
 
     }
 
-    .depositions-image {
-        justify-content: flex-start;
-        margin-left: 100px;
-    }
-
-
 }
 
 
@@ -377,11 +371,6 @@
     .card-team-networks-links {
         padding: auto;
 
-    }
-
-    .depositions-image {
-        justify-content: flex-start;
-        margin-left: 65px;
     }
 
     .banner-button-options {
