@@ -4,7 +4,6 @@ import depositions_mariana from '../../assets/images/depositions_mariana.jpg';
 import depositions_hanaty from '../../assets/images/depositions_hanaty.jpeg';
 import depositions_deborah from '../../assets/images/depositions_deborah.jpg';
 import depositions_mayara from '../../assets/images/depositions_mayara.jpeg';
-import img_depoimentos_leaf from '../../assets/images/img_depoiments_leaf.svg';
 import Carousel from 'react-elastic-carousel';
 import './style.css';
 
@@ -83,8 +82,6 @@ const Depositions = () => {
                 </div>
 
             </Carousel>
-            <img className='depositions-plant' src={img_depoimentos_leaf} alt='depositions-plant' />
-
         </div>
     )
 }

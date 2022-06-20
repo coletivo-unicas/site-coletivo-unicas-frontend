@@ -5,6 +5,7 @@ import BackgroundHive from '../../assets/images/bg_our_team_hive.svg';
 import BackgroundLine from '../../assets/images/bg_our_team_line.svg';
 import You from '../../assets/images/you.svg';
 import api from "../../services/api";
+import img_depoimentos_leaf from '../../assets/images/img_depoiments_leaf.svg';
 
 const OurTeam = () => {
     const [membersData, setMembersData] = useState([]);
@@ -27,6 +28,7 @@ const OurTeam = () => {
 
     return (
         <div id='ourTeam'>
+            <img className='our-team-plant' src={img_depoimentos_leaf} alt='depositions-plant' />
             <img className='our-team-background-line' src={BackgroundLine} alt='BackgroundLine' />
             <div>
                 <h2 className='our-team-title'>NOSSO TIME</h2>
