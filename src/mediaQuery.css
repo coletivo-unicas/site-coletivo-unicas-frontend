@@ -108,17 +108,16 @@
     .contact-form {
         margin-left: -2px;
     }
-   .banner-button-options{
-    display:none ;
-   }
-   .card-team-networks-links{
-    padding: auto;
-  
-   }
-   .depositions-image{
-     justify-content:flex-start;
-     margin-left: 115px;
-   }
+
+    .banner-button-options {
+        display: none;
+    }
+
+    .card-team-networks-links {
+        padding: auto;
+
+    }
+
 
     .banner-button-options {
         display: none;
@@ -240,10 +239,7 @@
         padding: auto;
 
     }
-    .depositions-image{
-        justify-content:flex-start;
-        margin-left: 95px;
-    }
+
 
 
 
@@ -363,18 +359,16 @@
     .contact-form {
         margin-left: -2px;
     }
-   
-   .banner-button-options{
-    display:none ;
-   }
-   .card-team-networks-links{
-    padding: auto;
-  
-   }
-   .depositions-image{
-    justify-content:flex-start;
-    margin-left: 75px;
-}
+
+    .banner-button-options {
+        display: none;
+    }
+
+    .card-team-networks-links {
+        padding: auto;
+
+    }
+
 
     .banner-button-options {
         display: none;

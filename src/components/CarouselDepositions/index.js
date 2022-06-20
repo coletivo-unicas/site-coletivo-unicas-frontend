@@ -20,7 +20,7 @@ const Depositions = () => {
                 autoPlaySpeed={30000}
 
             >
-                <div>
+                <div className='dep'>
                     <img className='depositions-image' src={depositions_rayssa} alt='banner' />
                     <p className='depositions-text'>
                         "Pertencer a um coletivo como o UNICAs, que é sinônimo de união,

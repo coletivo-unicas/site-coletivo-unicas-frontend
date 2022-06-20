@@ -1,8 +1,9 @@
 #depositions {
-    display: flow-root;
+    display: flex;
     background-color: #255932;
     position: relative;
     padding: 40px 20px 20px;
+    text-align: center;
 }
 
 
@@ -11,7 +12,7 @@
     height: 100px;
     text-align: center;
     object-fit: cover;
-    margin: 0 0 20px 45%;
+    margin: 0 0 20px 0;
     border-radius: 50%;
 
 }
