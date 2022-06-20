@@ -11,7 +11,7 @@
 .banner-button-options {
     display: inline-flex;
     justify-content: center;
-    margin: 0px 0 100px 0;
+    margin: 0px 0 100px -90px;
     width: 100%;
 }
 

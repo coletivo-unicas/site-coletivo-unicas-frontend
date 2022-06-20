@@ -57,6 +57,7 @@
     }
     .projects-title{
         font-size: 22px;
+        margin-left: 96px;
     }
     .about-option-description{
         margin-left: -35px;
@@ -81,13 +82,19 @@
         margin-bottom: -170px;
     }
     .contact-title{
-        margin-left: 55px;
+        margin-left: 35px;
     }
     .contact-form{
-        margin-left: -40px;
+        margin-left: -2px;
+    }
+    .depositions-image{
+        margin-left: 90px;
+
     }
    
 }
+
+
 @media (max-width:375px){
 
     .about-background-cloud {
@@ -157,11 +164,22 @@
     .about-background-cloud{
         margin-bottom: -183px;
     }
+    .contact-title{
+        margin-left: 0px;
+    }
+    .contact-form{
+        margin-left: -2px;
+    }
+    .depositions-image{
+        margin-left: 70px;
 
-
-
+    }
+    
 
 }
+
+
+
 @media (max-width:320px){
 
     .about-background-cloud {
@@ -239,15 +257,29 @@
     }
     .banner-main{
         width: 600px;
+        margin-bottom: 50px;
     }
     .about-image{
         width: 180px;
         margin-top: 15px;
     }
     .about-background-cloud{
-        margin-bottom: -183px;
+        margin-bottom: -190px;
     }
-    
+    .contact-title{
+        font-size: 20px;
+
+    }
+    .contact-form{
+        margin-left: -2px;
+    }
+    .depositions-image{
+        margin-left: 50px;
+
+    }
+   .banner-button-options{
+    display:none ;
+   }
 
     
    

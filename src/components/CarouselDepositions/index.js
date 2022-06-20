@@ -18,7 +18,7 @@ const Depositions = () => {
                 pagination={true}
                 showArrows={false}
                 enableAutoPlay={true}
-                autoPlaySpeed={20000}
+                autoPlaySpeed={30000}
 
             >                                           
                     <div>
