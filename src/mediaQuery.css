@@ -94,6 +94,10 @@
     padding: auto;
   
    }
+   .depositions-image{
+    margin-left: 90px;
+   }
+
    
 }
 
@@ -179,6 +183,9 @@
     .card-team-networks-links{
         padding: auto;
       
+    }
+    .depositions-image{
+        margin-left: 65px;
     }
     
     
@@ -288,6 +295,9 @@
     padding: auto;
   
    }
+   .depositions-image{
+    margin-left: 55px;
+}
 
     
    
