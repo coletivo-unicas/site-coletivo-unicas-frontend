@@ -14,3 +14,17 @@
     display: inline-flexbox;
     margin-bottom: 30px;
 }
+
+a {
+    margin-inline: 1rem;
+}
+
+#footer-button:hover {
+    background-image: none;
+}
+
+h6 {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #D9D3EF;
+}
