@@ -35,8 +35,8 @@ const CardTeam = ({ img, name, course, pronoun, signUp, urlLinkedin, urlGitHub }
                     <Button
                         title="Inscreva-se"
                         color="#6451A6"
-                        width="110px"
-                        height="38px"
+                        width="130px"
+                        height="42px"
                         padding="0px 0 6px 0"
                         handlerButton={goToSubscription} />
                 </div>
