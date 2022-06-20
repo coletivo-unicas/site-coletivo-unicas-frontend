@@ -82,7 +82,7 @@ const Depositions = () => {
                         <p id='depositions-descrition'>Aluna de Sistemas para Internet</p>
                     </div>
                                                     
-            </Carousel>;        
+            </Carousel>;      
             <img className='depositions-plant' src={img_depoimentos_leaf} alt='depositions-plant'/>
 
         </div>
