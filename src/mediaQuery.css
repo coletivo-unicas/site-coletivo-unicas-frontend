@@ -27,7 +27,7 @@
     }
     .img-qs{
        position:static;
-       margin-left: -60px;
+       margin-left: -10px;
        margin-bottom: 40px;
        margin-top: -30px;
     }
@@ -36,8 +36,65 @@
         width: 450px;
         margin: 20px;
     }
+    #responsive-navbar-nav{
+        background-color:  #eed0f9;
+        margin-left: 230px;
+        border-radius: 10px;
+        margin-top: 5px;
+        padding: 20px;
+
+    }
+    .our-partnerships-title{
+        font-size: 22px;
+    }
+    .our-partnerships-logos{
+        margin-left: 35px;
+    }
+    .our-team-title{
+        font-size: 22px;
+        margin-left: 125px;
+    
+    }
+    .projects-title{
+        font-size: 22px;
+        margin-left: 96px;
+    }
+    .about-option-description{
+        margin-left: -35px;
+    }
+    .about-title{
+        font-size: 22px;
+        margin-left: 75px;
+    }
+    .about-subtitle{
+        font-size: 18px;
+        margin-left: 40px;
+
+    }
+    .banner-main{
+        width: 600px;
+    }
+    .about-image{
+        width: 180px;
+        margin-top: 15px;
+    }
+    .about-background-cloud{
+        margin-bottom: -170px;
+    }
+    .contact-title{
+        margin-left: 35px;
+    }
+    .contact-form{
+        margin-left: -2px;
+    }
+    .depositions-image{
+        margin-left: 90px;
+
+    }
    
 }
+
+
 @media (max-width:375px){
 
     .about-background-cloud {
@@ -54,7 +111,7 @@
     }
     .img-qs{
        position:static;
-       margin-left: -90px;
+       margin-left: -30px;
        margin-bottom: 40px;
        margin-top: -30px;
     }
@@ -63,8 +120,66 @@
         width: 400px;
         margin: 20px;
     }
-   
+    #responsive-navbar-nav{
+        background-color:  #eed0f9;
+        margin-left: 180px;
+        border-radius: 10px;
+        margin-top: 5px;
+        padding: 20px;
+    }
+    .our-partnerships-title{
+        font-size: 20px;
+    }
+    .our-partnerships-logos{
+        margin-left: 15px;
+    }
+    .our-team-title{
+        font-size: 22px;
+        margin-left: 110px;
+    
+    }
+    .projects-title{
+        font-size: 20px;
+        margin-left: 85px;
+    }
+    .about-option-description{
+        margin-left: -45px;
+    }
+    .about-title{
+        font-size: 22px;
+        margin-left: 50px;
+    }
+    .about-subtitle{
+        font-size: 18px;
+        margin-left: 45px;
+
+    }
+    .banner-main{
+        width: 600px;
+    }
+    .about-image{
+        width: 180px;
+        margin-top: 15px;
+    }
+    .about-background-cloud{
+        margin-bottom: -183px;
+    }
+    .contact-title{
+        margin-left: 0px;
+    }
+    .contact-form{
+        margin-left: -2px;
+    }
+    .depositions-image{
+        margin-left: 70px;
+
+    }
+    
+
 }
+
+
+
 @media (max-width:320px){
 
     .about-background-cloud {
@@ -84,7 +199,7 @@
     }
     .img-qs{
        position:static;
-       margin-left: -110px;
+       margin-left: -50px;
        margin-bottom: 40px;
        margin-top: -30px;
     }
@@ -94,10 +209,11 @@
         margin: 20px;
     }
     #responsive-navbar-nav{
-       
-        margin-left: 180px;
+        background-color:  #eed0f9;
+        margin-left: 140px;
         border-radius: 10px;
         margin-top: 5px;
+        padding: 20px;
     }
     .menu{
        
@@ -111,13 +227,60 @@
         box-shadow: none !important;
         margin-top: -45px;
         align-items: center;
-        
-        
-        
-        
     }
+    .our-partnerships-title{
+        font-size: 20px;
+    }
+    .our-partnerships-logos{
+        margin-left: -5px;
+    }
+    .our-team-title{
+        font-size: 22px;
+        margin-left: 85px;
     
-   
+    }
+    .projects-title{
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    .about-option-description{
+        margin-left: -35px;
+    }
+    .about-title{
+        font-size: 22px;
+        margin-left: 60px;
+    }
+    .about-subtitle{
+        font-size: 18px;
+        margin-left: 30px;
+
+    }
+    .banner-main{
+        width: 600px;
+        margin-bottom: 50px;
+    }
+    .about-image{
+        width: 180px;
+        margin-top: 15px;
+    }
+    .about-background-cloud{
+        margin-bottom: -190px;
+    }
+    .contact-title{
+        font-size: 20px;
+
+    }
+    .contact-form{
+        margin-left: -2px;
+    }
+    .depositions-image{
+        margin-left: 50px;
+
+    }
+   .banner-button-options{
+    display:none ;
+   }
+
     
    
    

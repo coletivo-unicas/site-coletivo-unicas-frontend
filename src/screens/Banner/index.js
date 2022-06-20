@@ -24,13 +24,22 @@ const Banner = () => {
                         border='2px solid #FFF'
                         width='240px'
                         margin='0px 20px 150px 0px'
+                        font-size='px'
                     />
                 </Link>
-
-                <Button
-                    title='Fala com a gente'
-                    margin='0 0 0 140px'
-                />
+                <Link
+                    id='banner-button'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={100}
+                    to='contact'>
+                    <Button
+                        title='Fala com a gente'
+                        margin='0 0 0 140px'
+                        width='170px'
+                    />
+                </Link>
             </div>
 
         </div>

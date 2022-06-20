@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectDetailsCarousel from "../ProjectDetailsCarousel";
+import api from "../../services/api";
 
 const ModalProjects = (props) => {
+    const [projectData, setProjectData] = useState([]);
+    const [projectImages, setProjectImages] = useState([]);
+    const idProject = props.projectid;
+
+    const getProjectById = async () => {
+        await api
+            .get(`project/${idProject}`)
+            .then((response) => {
+                setProjectData(response.data);
+                setProjectImages(response.data.images)
+            })
+            .catch((err) => {
+                console.error("ops! ocorreu um erro" + err);
+            });
+    }
+
+    useEffect(() => {
+        getProjectById();
+    });
+
     return (
         <Modal
             {...props}
@@ -15,14 +36,12 @@ const ModalProjects = (props) => {
             <Modal.Header closeButton>
             </Modal.Header>
             <Modal.Body>
-                <ProjectDetailsCarousel />
+                <ProjectDetailsCarousel data={projectImages} />
 
                 <div className="modal-projects-body">
-                    <h4 className="modal-projects-title">Núcleo de Idiomas</h4>
+                    <h4 className="modal-projects-title">{projectData.title}</h4>
                     <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                        consectetur ac, vestibulum at eros.
+                        {projectData.description}
                     </p>
                 </div>
             </Modal.Body>

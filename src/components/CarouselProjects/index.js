@@ -2,25 +2,20 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import BackgroundProjectBorder from '../../assets/Images/bg_project_border.svg';
 import Carousel from 'react-elastic-carousel';
-import api from "../../services/api";
+import ModalProjects from '../../components/ModalProjects';
 
-const CarouselProjects = ({ handlerButton }) => {
+
+const CarouselProjects = ({ data }) => {
     let [itemsToShowDevice, setItemsToShowDevice] = useState(3);
-    const [projectsData, setProjectsData] = useState([]);
+    const [modalShowData, setModalShowData] = useState(false);
+    const [projectDataId, setProjectDataId] = useState('');
 
-    const getProjects = async () => {
-        await api
-            .get("projects")
-            .then((response) => {
-                setProjectsData(response.data)
-            })
-            .catch((err) => {
-                console.error("ops! ocorreu um erro" + err);
-            });
+    const modalShow = (id) => {
+        setProjectDataId(id);
+        setModalShowData(true);
     }
 
     useEffect(() => {
-        getProjects();
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             setItemsToShowDevice(1);
         }
@@ -32,8 +27,8 @@ const CarouselProjects = ({ handlerButton }) => {
                 itemsToShow={itemsToShowDevice}
                 pagination={false}
             >
-                {projectsData.map((project, id) =>
-                    <div key={id} className='carousel-projects-background' onClick={handlerButton}>
+                {data.map((project, id) =>
+                    <div key={id} className='carousel-projects-background' onClick={() => modalShow(project.ID)}>
                         <img className='carousel-projects-border' src={BackgroundProjectBorder} alt='BackgroundProjectBorder' />
                         <img className='carousel-projects-image' src={project.images[0].image} alt='projects' />
                         <label className='carousel-projects-title'>
@@ -42,6 +37,14 @@ const CarouselProjects = ({ handlerButton }) => {
                     </div>
                 )}
             </Carousel>
+            <div>
+                {modalShowData &&
+                    <ModalProjects
+                        show={modalShowData}
+                        projectid={projectDataId}
+                        onHide={() => setModalShowData(false)} />
+                }
+            </div>
         </div>
     )
 }

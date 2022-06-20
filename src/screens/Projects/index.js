@@ -1,25 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CarouselProjects from '../../components/CarouselProjects';
 import './style.css';
-import ModalProjects from '../../components/ModalProjects';
 import BackgroundProjects from '../../assets/Images/bg_projects.svg';
-import BannerImage from '../../assets/Images/banner.jpg';
+import api from "../../services/api";
 
 const Projects = () => {
-    const [modalShowData, setModalShowData] = useState(false);
-    
+    const [projectsData, setProjectsData] = useState([]);
+
+    const getProjects = async () => {
+        await api
+            .get("projects")
+            .then((response) => {
+                setProjectsData(response.data)
+            })
+            .catch((err) => {
+                console.error("ops! ocorreu um erro" + err);
+            });
+    }
+
+    useEffect(() => {
+        getProjects();
+    }, []);
+
     return (
         <div id='projects'>
             <div>
-                <h2 className='projects-title'>CONHEÇA OS NOSSOS PROJETOS</h2>
-
+                <h2 className='projects-title'>NOSSOS PROJETOS</h2>
                 <CarouselProjects
-                    handlerButton={() => setModalShowData(true)}
-                    image={BannerImage} />
-                <div>
-                    <ModalProjects show={modalShowData} projectId={'1'}
-                        onHide={() => setModalShowData(false)} />
-                </div>
+                    data={projectsData}
+                />
                 <img className='projects-background' src={BackgroundProjects} alt='BackgroundProjects' />
             </div>
 
