@@ -28,9 +28,6 @@
         margin-bottom: -122px;
     }
 
-    .banner-button-options {
-        margin-top: 100px;
-    }
 
     .banner-main {
         width: 100%;
@@ -107,25 +104,26 @@
         margin-top: 15px;
     }
 
-    .contact-title {
-        margin-left: 35px;
-    }
 
     .contact-form {
         margin-left: -2px;
     }
-   .banner-button-options{
-    display:none ;
-   }
-   .card-team-networks-links{
-    padding: auto;
-  
-   }
-   .depositions-image{
-    margin-left: 90px;
-   }
 
-   
+    .banner-button-options {
+        display: none;
+    }
+
+    .card-team-networks-links {
+        padding: auto;
+
+    }
+
+    .depositions-image {
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
+
+
 }
 
 
@@ -231,11 +229,13 @@
         padding: auto;
 
     }
-    .depositions-image{
-        margin-left: 65px;
+
+    .depositions-image {
+        justify-content: flex-start;
+        margin-left: 80px;
     }
-    
-    
+
+
 
 }
 
@@ -353,17 +353,20 @@
     .contact-form {
         margin-left: -2px;
     }
-   
-   .banner-button-options{
-    display:none ;
-   }
-   .card-team-networks-links{
-    padding: auto;
-  
-   }
-   .depositions-image{
-    margin-left: 55px;
-}
+
+    .banner-button-options {
+        display: none;
+    }
+
+    .card-team-networks-links {
+        padding: auto;
+
+    }
+
+    .depositions-image {
+        justify-content: flex-start;
+        margin-left: 65px;
+    }
 
     .banner-button-options {
         display: none;
