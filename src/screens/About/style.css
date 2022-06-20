@@ -64,7 +64,8 @@
 .about-option-description {
     font-family: 'Open Sans', sans-serif;
     width: 80%;
-    margin: 0 0px 100px 50px;
+    margin: 0 0px 100px 0px;
+    display: inline-flex;
 
 }
 
