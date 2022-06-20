@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import BackgroundProjectBorder from '../../assets/Images/bg_project_border.svg';
+import BackgroundProjectBorder from '../../assets/images/bg_project_border.svg';
 import Carousel from 'react-elastic-carousel';
 import ModalProjects from '../../components/ModalProjects';
 

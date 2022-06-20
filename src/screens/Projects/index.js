@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CarouselProjects from '../../components/CarouselProjects';
 import './style.css';
-import BackgroundProjects from '../../assets/Images/bg_projects.svg';
+import BackgroundProjects from '../../assets/images/bg_projects.svg';
 import api from "../../services/api";
 
 const Projects = () => {
