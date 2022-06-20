@@ -5,6 +5,9 @@ import TextArea from '../../components/Form/TextArea';
 import useForm from '../../Hooks/useFormInput';
 import './style.css';
 
+const FORM_ENDPOINT =
+  'https://public.herotofu.com/v1/d9c2d6c0-f01f-11ec-94cd-436cd72d679b';
+
 const Contact = () => {
   const name = useForm();
   const email = useForm('email');
@@ -30,15 +33,25 @@ const Contact = () => {
     'Dúvidas Gerais',
   ];
 
-  function handleSubmit(event) {
+  const [submitted, setSubmitted] = React.useState(false);
+
+  const handleSubmit = (event) => {
     event.preventDefault();
     if (name.validate() && email.validate() && message.validate()) {
       console.log('Enviar');
-      // TODO:fazer envio de email
+      console.log(name);
+      console.log(message);
+      console.log(email);
+      setTimeout(() => {
+        setSubmitted(true);
+      }, 100);
     } else {
       console.log('Não Enviar');
-      // TODO:mostrar erro
     }
+  };
+
+  if (submitted) {
+    console.log('formulário enviado!');
   }
 
   return (
@@ -46,7 +59,12 @@ const Contact = () => {
       <div className="contact-texts">
         <h3 className="contact-title">ENTRE EM CONTATO COM A GENTE</h3>
         <div className="contact-form">
-          <form onSubmit={handleSubmit}>
+          <form
+            action={FORM_ENDPOINT}
+            onSubmit={handleSubmit}
+            method="POST"
+            target="_blank"
+          >
             <div className="container">
               <div className="contact-form-personal">
                 <Input
@@ -59,7 +77,7 @@ const Contact = () => {
                 <Input
                   label="Email*"
                   id="email"
-                  type="text"
+                  type="email"
                   placeholder="Email"
                   {...email}
                 />
