@@ -16,9 +16,7 @@
         margin-bottom: -122px;
     }
    
-    .banner-button-options{
-        margin-top: 100px;
-    }
+   
     .banner-main{
         width: 100%;
         margin-bottom: 200px;
@@ -81,9 +79,7 @@
         margin-top: 15px;
     }
    
-    .contact-title{
-        margin-left: 35px;
-    }
+    
     .contact-form{
         margin-left: -2px;
     }
@@ -95,7 +91,8 @@
   
    }
    .depositions-image{
-    margin-left: 90px;
+     justify-content:flex-start;
+     margin-left: 100px;
    }
 
    
@@ -185,7 +182,8 @@
       
     }
     .depositions-image{
-        margin-left: 65px;
+        justify-content:flex-start;
+        margin-left: 80px;
     }
     
     
@@ -296,7 +294,8 @@
   
    }
    .depositions-image{
-    margin-left: 55px;
+    justify-content:flex-start;
+    margin-left: 65px;
 }
 
     
